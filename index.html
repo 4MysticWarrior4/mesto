@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheer" href="fonts/fonts.css">
     <title>Mesto</title>
 </head>
 <body class="page">
@@ -16,7 +17,7 @@
         <div class="profile__avatar"></div>
         <ul class="profile__info"> 
             <li class="profile__name"> 
-                Жак-Ив Кусто<button class="profile__edit-button profile__button-item"></button> 
+                Жак-Ив Кусто<button type="submit" class="profile__edit-button profile__button-item"></button> 
             </li>
             <li class="profile__describe">Исследователь океана</li>
         </ul>
@@ -60,9 +61,22 @@
              </div>
            </div>
     </section>
+    <div class="popup">
+    <div class="popup__container">
+      <button class="popup__close-button"></button>
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <fieldset class="popup__elements">
+      <input type="text" placeholder="Имя" class="popup__text popup__text_type_name">
+      <input type="text" placeholder="О себе" class="popup__text popup__text_type_about">
+      </fieldset>
+      <button class="popup__save-button">Сохранить</button>
+    </div>
+    </div>
 </main>
 <footer class="footer">
-  <div class="footer__logo"></div>
+  <div class="footer__logo">
+  </div>
 </footer>
+<script src="/scrypt.js"></script>
 </body>
 </html>
