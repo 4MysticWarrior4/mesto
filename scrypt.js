@@ -2,33 +2,47 @@ const popupOpenBtn = document.querySelector('.profile__edit-button');
 const popup = document.querySelector('.popup');
 const popupCloseBtn = document.querySelector('.popup__close-button');
 
-popupOpenBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    togglePopup()
-});
+const profileName = document.querySelector('.profile__name');
+const profileAbout = document.querySelector('.profile__describe');
 
-popupCloseBtn.addEventListener("click", function (e) {
-    popup.classList.remove("popup__opened")
-});
-function togglePopup() {
-    popup.classList.add("popup__opened")
+const profileForm = document.querySelector('.popup__container');
+
+const profileNameInput = document.querySelector('.popup__text_type_name');
+const profileAboutInput = document.querySelector('.popup__text_type_about');
+const profileSubmitBtn = profileForm.querySelector('.popup__save-button');
+
+const likeButtons = document.querySelectorAll('.elements__button');
+
+popupOpenBtn.addEventListener('click', openPopup);
+
+function openPopup() {
+  popup.classList.add('popup_opened');
+  getProfileValues();
 }
 
-let formElement = document.querySelector('.profile__info')
-let nameInput = formElement.querySelector('.profile__name')
-let jobInput =  formElement.querySelector('.profile__describe')
-let saveBtn = formElement.querySelector('.popup__save-button')
-
-function formSubmitHandler (evt) {
-    evt.preventDefault();
-    jobInput.value = ''
-    nameInput.value = ''
-    renderAdded();
-
-    let nameInput = nameInput.value();
-    let jobInput = jobInput.value();
-    nameInput.textContent = '';
-    jobInput.textContent = '';
+function closePopup() {
+  popup.classList.remove('popup_opened');
 }
-formElement.addEventListener('submit', formSubmitHandler);
- popup.classList.remove("popup__opened")
+
+function getProfileValues() {
+  profileNameInput.value = profileName.textContent;
+  profileAboutInput.value = profileAbout.textContent;
+}
+
+popupCloseBtn.addEventListener('click', closePopup);
+
+profileForm.addEventListener('submit', formSubmitHandler);
+
+function formSubmitHandler(e) {
+  e.preventDefault();
+  profileName.textContent = profileNameInput.value;
+  profileAbout.textContent = profileAboutInput.value;
+  closePopup();
+}
+
+likeButtons.forEach((like) => like.addEventListener('click', toggleLike));
+
+function toggleLike(e) {
+  const closestLike = e.target.closest('.elements__button');
+  closestLike.classList.toggle('elements__button_liked');
+}

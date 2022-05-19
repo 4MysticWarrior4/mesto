@@ -1,0 +1,7 @@
+.elements__rectangle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
