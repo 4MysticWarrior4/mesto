@@ -9,6 +9,8 @@
 
 @media screen and (max-width: 320px) {
     .profile__avatar {
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 }

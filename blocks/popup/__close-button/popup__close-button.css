@@ -10,12 +10,16 @@
     border: none;
     cursor: pointer;
     background-color: black;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     z-index: 999;
 }
 
 .popup__close-button:hover {
     opacity: 0.6;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 

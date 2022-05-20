@@ -1,4 +1,6 @@
 .popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     width: 100%;
