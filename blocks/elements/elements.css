@@ -1,13 +1,20 @@
 .elements {
-    width: 880px;
+    max-width: 880px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 17px 1fr 17px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 50px auto auto auto;
     -webkit-column-gap: 17px;
-       -moz-column-gap: 17px;
-            column-gap: 17px;
+    -moz-column-gap: 17px;
+    column-gap: 17px;
+}
+
+@media screen and (max-width: 620px) {
+    .elements {
+        max-width: 582px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 320px) {

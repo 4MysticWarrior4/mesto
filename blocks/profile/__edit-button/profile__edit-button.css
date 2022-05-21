@@ -17,7 +17,13 @@
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
+@media screen and (max-width: 620px) {
+    .profile__edit-button {
+        min-width: 20px;
+        height: 20px;
+        margin: auto 15px auto 14px;
+    }
+}
 @media screen and (max-width: 320px) {
     .profile__edit-button {
         width: 18px;

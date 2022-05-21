@@ -1,14 +1,22 @@
 .header {
     display: flex;
     margin: 0 auto 40px;
-    width: 880px;
+    max-width: 880px;
     min-height: 73px;
-    border-bottom: 1px rgb(84, 84, 84, 0.5) solid;
+    border-bottom: 1px rgb(84, 84, 84, 0.7) solid;
+}
+
+@media screen and (max-width: 620px) {
+    .header {
+        max-width: 620px;
+        height: 64px;
+        margin: 0 auto 32px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .header {
-        width: 320px;
+        max-width: 320px;
         height: 56px;
         margin: 0 auto 42px;
     }

@@ -9,7 +9,7 @@
     background-size: contain;
     border: none;
     cursor: pointer;
-    background-color: black;
+    background-color: inherit;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;

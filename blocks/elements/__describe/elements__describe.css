@@ -6,6 +6,6 @@
     height: 80px;
     background-color: #FFFFFF;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }

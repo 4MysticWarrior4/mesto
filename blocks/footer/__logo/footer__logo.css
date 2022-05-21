@@ -9,9 +9,9 @@
 
 @media screen and (max-width: 320px) {
     .footer__logo {
-        width: 282px;
-        height: 14px;
-        margin: 28px auto 0 0;
-        padding-bottom: 36px;
+    width: 282px;
+    height: 14px;
+    margin: 28px auto 0 0;
+    padding-bottom: 36px;
     }
 }

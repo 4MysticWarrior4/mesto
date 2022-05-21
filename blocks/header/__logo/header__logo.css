@@ -4,7 +4,7 @@
     width: 142px;
     height: 33px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
 }
 
 .header__logo:hover {
@@ -16,8 +16,14 @@
 
 @media screen and (max-width: 320px) {
     .header__logo {
-        min-width: 104px;
-        min-height: 24px;
-        margin: 0 auto auto 27px;
+    min-width: 104px;
+    min-height: 24px;
+    margin: 0 auto auto 27px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header__logo {
+        margin: 0 auto auto 19px;
     }
 }

@@ -1,15 +1,24 @@
 .profile__describe {
     margin: auto;
     margin-top: 16px;
+    max-width: 336px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
 }
-
+@media screen and (max-width: 620px) {
+    .profile__describe {
+        max-width: 100%;
+        font-size: 16px;
+        margin: 15px auto auto;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 320px) {
     .profile__describe {
+        max-width: 282px;
         font-size: 14px;
         margin: 14px auto auto;
         text-align: center;
