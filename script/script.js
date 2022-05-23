@@ -39,10 +39,3 @@ function formSubmitHandler(e) {
   profileAbout.textContent = profileAboutInput.value;
   closePopup();
 }
-
-likeButtons.forEach((like) => like.addEventListener('click', toggleLike));
-
-function toggleLike(e) {
-  const closestLike = e.target.closest('.elements__button');
-  closestLike.classList.toggle('elements__button_liked');
-}

@@ -14,11 +14,3 @@
         align-self: center;
     }
 }
-
-@media screen and (max-width: 320px) {
-    .profile__avatar {
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    }
-}
